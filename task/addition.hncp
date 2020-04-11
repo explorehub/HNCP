@@ -1,0 +1,21 @@
+int c = 0, s, sum[10];
+
+//n: length of augend (summand), p: the current additive position.
+int lt[2] = {4, 1}, rt[2] = {5, 9}, n = 2, p=0;
+
+int multiAdd() {
+    if (p == n) {
+        return;
+    else
+        // Behaviours determined by training data. 
+        <%s=encoder(observe(lt[p],rt[p],c])):transform(linear(30)):decoder(choose(0,1,2,3,4,5,6,7,8,9))%>;
+        <%c=encoder(observe(lt[p],rt[p],c)):transform(linear(10)):decoder(choose(0,1))%>;
+
+        sum[p] = s;
+        p++;
+        multiAdd();
+    }
+}
+
+multiAdd();
+print(c, sum);
